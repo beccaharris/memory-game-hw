@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Baby Elephant",
+    "image": "/assets/images/baby-elephant.jpg"
+  },{
+    "id": 2,
+    "name": "Baby Orangutan",
+    "image": "/assets/images/baby-orangutan.jpg"
+  },{
+    "id": 3,
+    "name": "Baby Panda",
+    "image": "/assets/images/baby-panda.jpg"
+  },{
+    "id": 4,
+    "name": "Baby Polar Bear",
+    "image": "/assets/images/baby-polar-bear.jpg"
+  },{
+    "id": 5,
+    "name": "Baby Raccoon",
+    "image": "/assets/images/baby-raccoon.jpg"
+  },{
+    "id": 6,
+    "name": "Baby Seal",
+    "image": "/assets/images/baby-seal.jpg"
+  },{
+    "id": 7,
+    "name": "Baby Tiger",
+    "image": "/assets/images/baby-tiger.jpg"
+  },{
+    "id": 8,
+    "name": "Kitten",
+    "image": "/assets/images/kitten.jpg"
+  },{
+    "id": 9,
+    "name": "Puppy",
+    "image": "/assets/images/puppy.jpg"
+  },{
+    "id": 10,
+    "name": "Baby Chameleon",
+    "image": "/assets/images/baby-chameleon.jpg"
+  },{
+    "id": 11,
+    "name": "Baby Wombat",
+    "image": "/assets/images/baby-wombat.jpg"
+  },{
+    "id": 12,
+    "name": "Baby Donkey",
+    "image": "/assets/images/baby-donkey.jpg"
+  }
+]

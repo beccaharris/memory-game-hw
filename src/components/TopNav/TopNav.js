@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import NavItem from 'react-bootstrap/lib/NavItem';
 import Nav from 'react-bootstrap/lib/Nav';
@@ -6,7 +6,7 @@ import './TopNav.css'
 
 const TopNav = props => {
   return (
-    <Navbar>
+    <Navbar fixedTop>
       <Navbar.Header>
         <Navbar.Brand>
           <a href="#home">React-Bootstrap</a>

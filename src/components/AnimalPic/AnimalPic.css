@@ -1,0 +1,13 @@
+.img-thumbnail {
+  float: left;
+  height: 170px;
+  width: 170px;
+  margin-left: 19px;
+  margin-right: 19px;
+  margin-bottom: 20px;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  cursor: pointer;
+}

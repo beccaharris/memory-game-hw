@@ -1,11 +1,13 @@
-import React, { Component } from 'react';
-import Jumbotron from 'react-bootstrap/lib/Jumbotron';
+import React from 'react';
+import { Jumbotron, Grid } from 'react-bootstrap/lib';
 import './Jumbo.css';
 
 const Jumbo = props => {
   return (
     <Jumbotron>
-      <h1>Hello World</h1>
+      <Grid>
+        <h1>Hello World</h1>
+      </Grid>
     </Jumbotron>
   )
 }
