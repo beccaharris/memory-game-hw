@@ -1,4 +1,7 @@
-.nav {
+.navbar {
   margin-bottom: 0;
-  height: 60px;
+}
+
+.navbar.container {
+  width:100%
 }

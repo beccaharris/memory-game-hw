@@ -1,29 +1,29 @@
 import React from 'react';
-import { NavItem, Nav } from 'react-bootstrap/lib';
+import Navbar from 'react-bootstrap/lib/Navbar';
 import './TopNav.css';
 
 const TopNav = props => {
 
   return (
-    <Nav bsStyle="pills">
-      <div class="row">
-        <div class="col-md-4">
-          <NavItem>
+    <Navbar fluid fixedTop>
+      <div className="row">
+        <div className="col-md-4">
+          <Navbar.Text>
             Baby Animal Clicky Game!
-          </NavItem>
+          </Navbar.Text>
         </div>
-        <div class="col-md-4">
-          <NavItem>
-            NavItem 2 content
-          </NavItem>
+        <div className="col-md-4">
+          <Navbar.Text>
+            Click an image to begin!
+          </Navbar.Text>
         </div>
-        <div class="col-md-4">
-          <NavItem>
-            NavItem 3 content
-          </NavItem>
+        <div className="col-md-4">
+          <Navbar.Text>
+            Current Score: {props.currentScore} | High Score: {props.highScore}
+          </Navbar.Text>
         </div>
       </div>
-    </Nav>
+    </Navbar>
   );
 }
 

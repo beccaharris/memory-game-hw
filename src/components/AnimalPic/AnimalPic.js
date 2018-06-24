@@ -5,13 +5,15 @@ import './AnimalPic.css';
 
 const AnimalPic = props => {
   return (
-    <Image 
-      src={props.image} 
-      alt={props.name} 
-      thumbnail 
-      responsive
-    />
+      <Image
+        data-id={props.id}
+        src={props.image}
+        alt={props.name}
+        onClick={() => props.handleClick(props.id)}
+        thumbnail
+        responsive
+      />
   )
 }
-
-export default AnimalPic;
+    
+    export default AnimalPic;
