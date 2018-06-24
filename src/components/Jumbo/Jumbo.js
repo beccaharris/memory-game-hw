@@ -4,7 +4,7 @@ import './Jumbo.css';
 
 const Jumbo = props => {
   return (
-    <Jumbotron>
+    <Jumbotron fixed>
       <Grid>
         <h1>Hello World</h1>
       </Grid>
