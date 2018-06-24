@@ -15,32 +15,40 @@ import './App.css';
 class App extends Component {
 
   state = {
+    message: "Click an image to begin!",
     currentScore: 0,
     highScore: 0,
-    clickedAnimals: [],
-    message: "",
-    animals,
+    animals: animals,
+    unclickedAnimals: animals
   };
 
   randomizeArray = array => {
-    for (let i = array.length -1; i > 0; i--) {
+    for (let i = array.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
       [array[i], array[j]] = [array[j], array[i]];
     }
-    return array;
   }
 
-  handleRandomize = () => {
-    let randomizedAnimals = this.randomizeArray(animals);
-    this.setState({ animals: randomizedAnimals })
-  }
-
-  handleClick = id => {
-    if (this.state.clickedAnimals.indexOf(id) === -1) {
-      this.incrementScore();
+  handleClick = (name) => {
+    const findAnimal = this.state.unclickedAnimals.find(item => item.name === name);
+    if (findAnimal === undefined) {
+      this.setState({
+        message: "You guessed incorrectly! Your score has been reset. Click on another animal image to try again!",
+        currentScore: 0,
+        highScore: this.state.highScore,
+        animals: animals,
+        unclickedAnimals: animals
+      });
     } else {
-      this.resetGame();
+      const newAnimals = this.state.unclickedAnimals.filter(item => item.name !== name);
+      this.incrementScore();
+      this.setState({
+        message: "You guessed correctly!",
+        animals: animals,
+        unclickedAnimals: newAnimals
+      });
     }
+    this.randomizeArray(animals);
   }
 
   incrementScore = () => {
@@ -48,25 +56,15 @@ class App extends Component {
     this.setState({
       currentScore: updatedScore
     });
-    if( updatedScore > this.state.highScore ) {
-      this.setState({ 
-        highScore: updatedScore 
+    if (updatedScore > this.state.highScore) {
+      this.setState({
+        highScore: updatedScore
       })
     }
-    else if ( updatedScore === 12 ) {
-      this.setState({ message: "Great job! You won!"})
+    else if (updatedScore === 12) {
+      this.setState({ message: "Great job! You won!" })
     };
-    this.handleRandomize();
-  };
-
-  resetGame = () => {
-    this.setState({
-      currentScore : 0,
-      highScore : this.state.highScore,
-      clickedAnimals: [],
-      message: "Click an image to begin!"
-    });
-    this.handleRandomize()
+    this.randomizeArray(animals);
   };
 
   render() {
@@ -74,7 +72,8 @@ class App extends Component {
       <Wrapper>
         <TopNav
           currentScore={this.state.currentScore}
-          highScore={this.state.highScore} 
+          highScore={this.state.highScore}
+          message={this.state.message}
         />
         <Jumbo />
         <Grid>
@@ -84,9 +83,6 @@ class App extends Component {
               name={animal.name}
               image={animal.image}
               handleClick={this.handleClick}
-              handleIncrement={this.incrementScore}
-              resetGame={this.resetGame}
-              handleRandomize={this.handleRandomize}
             />
           ))}
         </Grid>

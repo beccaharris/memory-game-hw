@@ -2,50 +2,62 @@
   {
     "id": 1,
     "name": "Baby Elephant",
-    "image": "/assets/images/baby-elephant.jpg"
+    "image": "/assets/images/baby-elephant.jpg",
+    "clicked": false
   },{
     "id": 2,
     "name": "Baby Orangutan",
-    "image": "/assets/images/baby-orangutan.jpg"
+    "image": "/assets/images/baby-orangutan.jpg",
+    "clicked": false
   },{
     "id": 3,
     "name": "Baby Panda",
-    "image": "/assets/images/baby-panda.jpg"
+    "image": "/assets/images/baby-panda.jpg",
+    "clicked": false
   },{
     "id": 4,
     "name": "Baby Polar Bear",
-    "image": "/assets/images/baby-polar-bear.jpg"
+    "image": "/assets/images/baby-polar-bear.jpg",
+    "clicked": false
   },{
     "id": 5,
     "name": "Baby Raccoon",
-    "image": "/assets/images/baby-raccoon.jpg"
+    "image": "/assets/images/baby-raccoon.jpg",
+    "clicked": false
   },{
     "id": 6,
     "name": "Baby Seal",
-    "image": "/assets/images/baby-seal.jpg"
+    "image": "/assets/images/baby-seal.jpg",
+    "clicked": false
   },{
     "id": 7,
     "name": "Baby Tiger",
-    "image": "/assets/images/baby-tiger.jpg"
+    "image": "/assets/images/baby-tiger.jpg",
+    "clicked": false
   },{
     "id": 8,
     "name": "Kitten",
-    "image": "/assets/images/kitten.jpg"
+    "image": "/assets/images/kitten.jpg",
+    "clicked": false
   },{
     "id": 9,
     "name": "Puppy",
-    "image": "/assets/images/puppy.jpg"
+    "image": "/assets/images/puppy.jpg",
+    "clicked": false
   },{
     "id": 10,
     "name": "Baby Chameleon",
-    "image": "/assets/images/baby-chameleon.jpg"
+    "image": "/assets/images/baby-chameleon.jpg",
+    "clicked": false
   },{
     "id": 11,
     "name": "Baby Wombat",
-    "image": "/assets/images/baby-wombat.jpg"
+    "image": "/assets/images/baby-wombat.jpg",
+    "clicked": false
   },{
     "id": 12,
     "name": "Baby Donkey",
-    "image": "/assets/images/baby-donkey.jpg"
+    "image": "/assets/images/baby-donkey.jpg",
+    "clicked": false
   }
 ]

@@ -14,7 +14,7 @@ const TopNav = props => {
         </div>
         <div className="col-md-4">
           <Navbar.Text>
-            Click an image to begin!
+            {props.message}
           </Navbar.Text>
         </div>
         <div className="col-md-4">
