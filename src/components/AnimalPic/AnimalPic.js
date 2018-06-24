@@ -1,11 +1,16 @@
 import React from 'react';
-import { Row, Col, Image } from 'react-bootstrap/lib'
+import { Image } from 'react-bootstrap/lib'
 import './AnimalPic.css';
 
 
 const AnimalPic = props => {
   return (
-    <Image src={props.image} alt={props.name} thumbnail responsive/>
+    <Image 
+      src={props.image} 
+      alt={props.name} 
+      thumbnail 
+      responsive
+    />
   )
 }
 

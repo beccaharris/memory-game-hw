@@ -1,27 +1,30 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/lib/Navbar';
-import NavItem from 'react-bootstrap/lib/NavItem';
-import Nav from 'react-bootstrap/lib/Nav';
-import './TopNav.css'
+import { NavItem, Nav } from 'react-bootstrap/lib';
+import './TopNav.css';
 
 const TopNav = props => {
+
   return (
-    <Navbar fixedTop>
-      <Navbar.Header>
-        <Navbar.Brand>
-          <a href="#home">React-Bootstrap</a>
-        </Navbar.Brand>
-      </Navbar.Header>
-      <Nav>
-        <NavItem eventKey={1} href="#">
-          Link
-        </NavItem>
-        <NavItem eventKey={2} href="#">
-          Link
-        </NavItem>
-      </Nav>
-    </Navbar>
-  )
+    <Nav bsStyle="pills">
+      <div class="row">
+        <div class="col-md-4">
+          <NavItem>
+            Baby Animal Clicky Game!
+          </NavItem>
+        </div>
+        <div class="col-md-4">
+          <NavItem>
+            NavItem 2 content
+          </NavItem>
+        </div>
+        <div class="col-md-4">
+          <NavItem>
+            NavItem 3 content
+          </NavItem>
+        </div>
+      </div>
+    </Nav>
+  );
 }
 
 export default TopNav;
