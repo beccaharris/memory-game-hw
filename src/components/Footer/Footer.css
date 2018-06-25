@@ -1,6 +1,12 @@
 footer {
-  height: 60px;
+  height: 90px;
   margin-bottom: 0 !important;
   position: relative;
-  background-color: green
+  background-color: #61C9A8; 
+  border-top: 2px solid  #A53860;
+  text-align: center;
 }
+.github-link {
+  color: black;
+  margin-left: 20px;
+} 

@@ -7,20 +7,15 @@ const TopNav = props => {
   return (
     <Navbar fluid fixedTop>
       <div className="row">
-        <div className="col-md-4">
-          <Navbar.Text>
-            Baby Animal Clicky Game!
-          </Navbar.Text>
-        </div>
-        <div className="col-md-4">
-          <Navbar.Text>
+        <div className="col-md-8">
+          <h2 className="text-for-navbar">
             {props.message}
-          </Navbar.Text>
+          </h2>
         </div>
         <div className="col-md-4">
-          <Navbar.Text>
+          <h2 className="text-for-navbar">
             Current Score: {props.currentScore} | High Score: {props.highScore}
-          </Navbar.Text>
+          </h2>
         </div>
       </div>
     </Navbar>

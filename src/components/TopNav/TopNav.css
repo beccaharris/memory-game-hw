@@ -1,3 +1,12 @@
 .navbar {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
+}
+.container-fluid {
+  background-color: #61C9A8; 
+  border-bottom: 2px solid  #A53860;
+}
+.text-for-navbar {
+  float: none;
+  text-align: center;
+  color: #000;
 }

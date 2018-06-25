@@ -15,7 +15,7 @@ import './App.css';
 class App extends Component {
 
   state = {
-    message: "Click an image to begin!",
+    message: "Click any image to begin!",
     currentScore: 0,
     highScore: 0,
     animals: animals,
@@ -33,7 +33,7 @@ class App extends Component {
     const findAnimal = this.state.unclickedAnimals.find(item => item.name === name);
     if (findAnimal === undefined) {
       this.setState({
-        message: "You guessed incorrectly! Your score has been reset. Click on another animal image to try again!",
+        message: "Oh no! You already clicked that one! Click another image to restart",
         currentScore: 0,
         highScore: this.state.highScore,
         animals: animals,

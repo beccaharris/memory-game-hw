@@ -5,9 +5,8 @@ import './Jumbo.css';
 const Jumbo = props => {
   return (
     <Jumbotron fixed>
-      <Grid>
-        <h1>Hello World</h1>
-      </Grid>
+        <h1>Baby Animal Clicky Game!</h1>
+        <h2>Click on an image to earn points, but don't click the same image more than once!</h2>
     </Jumbotron>
   )
 }
